@@ -72,7 +72,7 @@ class SingnalEncoder(timm.models.vision_transformer.VisionTransformer):
                 return (x + x_dist) / 2
         else:
             x = self.head(x)
-        
+
         return inter,x
 
 
